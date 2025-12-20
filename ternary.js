@@ -4,17 +4,18 @@ let myGrade =
 testScore > 89
 ? "A"
 
-:testScore > 89
+:testScore > 79
 ? "B"
 
-:testScore > 89
+:testScore > 69
 ? "C"
 
-:testScore > 89
+:testScore > 59
 ? "D"
 
-:testScore > 89
+:testScore > 49
 ? "E"
 : "F";
 
 console.log(`My test grade is: ${myGrade}`);
+

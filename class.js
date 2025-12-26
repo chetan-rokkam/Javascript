@@ -23,6 +23,7 @@ let glanza = new ToyotaCar("glanza", 16);
 console.log(glanza);
 
 //inheritance
+//extend
 class parent {
   hello(){
     console.log("hello");
@@ -53,3 +54,37 @@ class Doctor extends person{
 }
 
 let chetanObj = new Engineer();
+
+/////////////////////////////
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  eat() { console.log(`${this.name} is eating.`); }
+}
+
+class Dog extends Animal {
+  bark() { console.log("Woof!"); }
+}
+
+const myDog = new Dog("Buddy");
+myDog.eat(); 
+myDog.bark(); 
+
+//super
+class Engineer extends person {
+  constructor (branch){
+    console.log("enter child character")
+    super();
+    this.branch = branch;
+    console.log("exit child character")
+  }
+
+  work() {
+    console.log("solve provlem, build something")
+  }
+ }
+
+ let engObj = new Engineer("chemical engg");
+
+
